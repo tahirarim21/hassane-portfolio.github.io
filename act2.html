@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Honeypot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/hassan.png">
+		<style>
+				
+				p,h3,h5,img ,div,li{
+			  
+			  margin-top: 50px;
+			  margin-bottom: 50px;
+			  margin-right: 300px;
+			  margin-left: 300px;
+			}
+			strong{ 
+				color: black;
+				font-size:28px;
+			}
+			b{
+				color: black;
+			}
+			div{
+				font-size: 20px;
+			}
+			h2{
+				text-align: center;
+			}
+			span:hover , span::after, span:active{
+				color: rgb(128, 0, 0);
+			
+			}
+			img{
+				text-align: center;
+			}
+			
+        </style>
+	</head>
+    <body>
+		<ul><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></ul>
+		
+			<br><br><h2>How to know Set Honeypot and trap the attackers ? </h2>
+			<h5>Before starting setting our honeypot we need to know our ipconfig , it's amazing how the virtual machine is able to have a different
+				 from the User machine . To know your virtual machine type <b> ifconfig </b>into the terminal,here's a picture showing us my VM(virtual machine) ipconfig.</h5>
+				 <center><img src="images/act2_img1.jpeg" alt=""></center><br>
+			<h3>What is <b>Honeypot </b>?</h3>
+			<p>In this activity we will use <b> Pentbox </b>which is a safety kit containing various tools for streamlining PenTest conducting a job easily.</p>
+			<center><img src="images/act2_img2.jpeg" alt=""></center>
+			<p>A <b> Honeypot </b>  is a security mechanism that creates a virtual trap to lure attackers. An intentionally compromised computer
+				 system allows attackers to exploit vulnerabilities so you can study them to improve your security policies. </p>
+
+				<h3>Entering and Setting Honeypot Tool:</h3>
+				<center><img src="images/act2_img3.jpeg" alt=""></center>
+				<ul> 
+					<li>In the <b>Terminal</b>, Select <b>Network Tools</b> by clicking 2. </li>
+					<li>In the <b>Terminal</b>, Select <b>Honeypot</b> by clicking 3. </li>
+					<li>In the <b>Terminal</b>, Select <b>Manual Configuration</b>  by clicking 2. </li>
+					<li>In the <b>Terminal</b>, Type <b>443</b> and enter to open the port. </li>
+					<li>In the <b>Terminal</b>, Type a Message <b>you have been caught!!</b> and enter. </li>
+					<li>In the <b>Terminal</b>, Type <b>y</b> and enter to save the log. </li>
+					<li>In the <b>Terminal</b>, click enter to save the log in default location. </li>
+					<li>In the <b>Terminal</b>, Type <b>n</b> and enter to not activate the beep sound. </li>
+				</ul>
+				<img src="images/act2_img4.jpeg" alt="">
+				<ul>
+					<li>Open <b>Firefox </b> in VM(virtual machine) ,and in the url bar type your ip address <b>(For me is :10.0.2.15)</b> and press enter. </li>
+					<li>You will see that <b> Problem Loading page</b> tab appears that says <b>Secure Connection Failed</b>.</li>
+					<li>In the <b>Terminal</b>,you will see <b>INTRUSION ATTEMPT DETECTED .</b> Press <b>"Ctrl+C"</b> to stop</li>
+					<li> Finally Close all Windows.</li>
+				</ul>
+
+<h3>•Reflections</h3><p>The article offers a step-by-step tutorial for establishing a honeypot, a security tool used to entice attackers and analyze their methods to strengthen security measures. It makes reference to the usage of instruments like Pentbox, a safety kit with a variety of tools for accelerating penetration testing.
+
+	The essay stresses the significance of knowing the virtual machine's (VM) IP address prior to setting up the honeypot. It advises obtaining the IP address of the VM using the terminal's "ifconfig" command. For monitoring incoming connections and gaining access to the honeypot, this information is crucial.</p>
+<div>
+	References:
+	<em>
+	<ul><li><a href="https://www.imperva.com/learn/application-security/honeypot-honeynet">Imperva Article:"Honeypot"</a></li>
+		<li><a href="https://github.com/technicaldada/pentbox">Github Article:"Pentbox" Author:"Technical Dada"</a></li>
+	</ul>
+	
+		  
+	</em>
+
+
+</div>
+        
+    </body>
+    </html>

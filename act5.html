@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Digitalization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/hassan.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+				
+				p,h3,h5,img ,div,li{
+			  
+			  margin-top: 50px;
+			  margin-bottom: 50px;
+			  margin-right: 300px;
+			  margin-left: 300px;
+			}
+			strong{ 
+				color: black;
+				font-size:28px;
+			}
+			b{
+				color: black;
+			}
+			div{
+				font-size: 20px;
+			}
+			h2{
+				text-align: center;
+			}
+			span:hover , span::after, span:active{
+				color: rgb(128, 0, 0);
+			
+			}
+			img{
+				text-align: center;
+			}
+			
+        </style>
+	</head>
+    <body>
+		<ul><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></ul>
+		
+			<br><br><h2>OWASP Top  10 Vulnerabilities 2023 </h2>
+			<p>Firstly we need to know what is <b> OWASP(Open Web Application Security Project) </b> is a non-profit organization whose work is focused on improving software security .It finds most dangerous
+                 security threats to web applcations and rank them according to their frequency of occurence and severity of impact.These are the OWASP top 10 vulnerabilities 2023 that every web and applications developer should look out before proceeding with the development. </p>
+                <center><img src="images/act5-pic1.png" alt=""></center>
+               
+
+				
+			<h3>•OWASP Top 10 List</h3>
+           <ol>
+            <li><b>Injection</b></li> <p>As a broad attack category, injection occurs when entrusted code or even malware is input in a way that allows attackers to alter the meaning of key commands. These injection attacks rely on coding vulnerabilities that make it possible for invalidated users to enter input.</p>
+           <p>Once the number one threat cited by OWASP, injection dropped to third place during the 2021 update. Another major change for the new version? This newly broad category now encompasses cross-site scripting (XSS), which has been a top security concern as of late. This category also encompasses several familiar
+             (albeit still dangerous) forms of injection, such as SQL, NoSQL, and LDAP.</p>
+            <li><b>Insecure design</b></li><p>At first glance, this OWASP category may seem excessively broad. It encompasses many risks that plague all types of apps and APIs. Its intention, however, is to reveal how many security problems arise early on — and the importance of considering them during the initial planning phase.</p>
+            <p>The insecure design does not refer to a specific mistake, but rather, an overarching way of thinking that needs to be addressed. According to OWASP, this problem calls for a security-first mindset, complete with "more threat modeling, secure design patterns and principles, and reference architectures."</p>
+            <p>When possible, weaknesses should be revealed well before implementation. Some threats can be identified before any code is actually written. These issues might be more difficult to detect down the line. Another perk is that this approach can be a lot more efficient, as it reduces the need for revised security solutions down the road.</p>
+            <li><b>Cryptographic failures</b></li><p>As a reframed version of an OWASP category once referred to as "Sensitive Data Exposure," cryptographic failure is a far-reaching but undeniably important concept. This category references any type of leak or breach that occurs due to issues with (or lack of) encryption</p>
+            <p>It should go without saying that data encryption is paramount when it comes to cybersecurity and thwarting hackers, but that doesn't mean every company or individual properly encrypts their data.</p>
+            <p>While it may seem simple, data encryption is anything but. Data needs to be encrypted both at the storage level and when it's being transferred. OWASP recommends that encryption be assessed based on the threat model, as some types of encryption will only provide protection against select types of attacks or vectors.</p>
+        <li><b>Broken access control</b></li><p>Even the most comprehensive security strategies will have little effect if they're not properly enforced. Unfortunately, this is often the case, with seemingly advanced security solutions implemented but, ultimately, failing to prove up to their full potential.</p>
+        <p>The chief culprit? Broken access control — when unauthorized parties gain access to seemingly protected systems and user accounts. This unexpected access leaves sensitive data at great risk. Often, applications with this issue fail to truly follow the rule of least privilege, which maintains that users should only be granted the specific permissions needed to carry out required tasks.</p>
+      <p>Worrisome findings from OWASP indicate that the vast majority of applications suffer broken access control to some extent, so it would be an understatement to refer to this problem as widespread.</p>
+<li><b>Vulnerable and outdated components</b></li><p>As application architecture grows ever more complicated, the potential for key components to become outdated (and therefore, more vulnerable to malicious code) increases substantially. Hence, the recent rise in the ranks for this category, which used to be far lower on the OWASP list.</p>
+<p>This risk increases further as many websites continue using components with known vulnerabilities rather than updating them. While this approach is certainly more convenient, these components are chock full of vulnerabilities that can then be exploited by cybercriminals.</p>
+<p>Awareness remains the best defense. This means vetting third-party components carefully before moving forward — and continuing to check for vulnerabilities long after they have been implemented. Streamlined applications are preferable whenever they're available, as fewer components mean fewer opportunities to become outdated or otherwise vulnerable to cyberattacks.</p>
+<li><b>Identification and authentication failures</b></li><p>Once referred to by OWASP as "broken authentication," failures related to identification and authentication can occur in a variety of situations. In general, however, they're most likely when applications have major flaws relating to password protection or session identifiers.</p>   
+<p>For example, these applications may allow users to stick with default passwords or select weak ones rather than enforcing the robust passwords needed to prevent brute-force attacks. Other potential risks attached to identification and authentication failures include credential stuffing and session hijacking.</p>
+<li><b>Software and data integrity failures</b></li><p>When code and infrastructure are unable to protect against integrity violations, it could lead to security flaws impacting everything from frameworks to client-side machines.</p>
+<p>This is one of OWASP's newer additions for 2021. OWASP references several familiar examples of this: when an "application relies upon plugins, libraries, or modules from untrusted sources, repositories, and content delivery networks (CDNs)."</p>
+<p>Auto-update functionality can also be problematic, particularly if said updates lack integrity verification at the time they are downloaded. Without this extra step, it's possible for attackers to upload updates on their own and even distribute these.</p>
+<li><b>Server-side request forgery</b></li><p>As a recent addition to the OWASP Top 10, server-side request forgeries (SSRF) occur when flaws in web applications allow malicious parties to access or even modify resources simply by abusing basic server functionality. This approach is sometimes compared to cross-site scripting (XSS) and cross-site request forgery (CSRF) but involves a compromised server rather than a compromised client.</p>
+<li><b>Security misconfiguration</b></li><p> When security best practices are neglected, seemingly safe websites and applications can become shockingly vulnerable. Unfortunately, security settings are often left in default mode, thereby preventing websites from achieving the maximum protection that they require in today's threat-filled digital environment.
+     Misconfigurations can arise at any level, such as application servers or network services. Often, they occur because unnecessary features (such as ports or accounts) are enabled. Out-of-date software is also a key problem.
+    Common misconfigurations can lead to many types of attacks, such as cross-site scripting or command injection. Even web application firewalls (WAFs) can be misconfigured, so there's no level of caution or oversight that goes too far.</p>
+<li><b>Security logging and monitoring failures</b></li><p> First appearing on the OWASP Top 10 in 2017 and now moving up the rankings, this category does not point to a specific vulnerability, but rather, the general failure to record login attempts.
+ This is a crucial strategy for mitigating attacks, as excessive login failures are indicative of breaches. What's more, these logs must be properly backed up and stored in separate locations to prevent unintentional losses in the event of a natural disaster or simple hardware failure. Additional protection can be obtained via real-time monitoring, which ensures that logs are analyzed promptly.</p>
+</ol>
+		<h3>•Tips to protect your application</h3>	
+        <ul>
+            <li>Security scanning</li>
+        <p>As the foundation of any security solution, vulnerability scanning provides much-needed oversight. This is a first line of defense, as it reveals where key vulnerabilities exist and whether any urgent threats need to be addressed.</p>
+    <li>Encryption</li>
+    <p> The need for strong encryption cannot be overstated. After all, the latest version of the OWASP Top 10 includes a revised category focused exclusively on cryptographic failures. SSL certificates remain the standard for producing encrypted links between clients and servers.</p>
+    <li>Log files</li>
+    <p>OWASP cites security logging as one of the most impactful strategies for verifying current security and boosting protection moving forward. Logging is available for everything from network devices and web servers to database servers and even custom application events. These logs are especially valuable for identifying and monitoring security incidents and policy violations.</p>
+   <li>Authorization</li>
+   <p>Defined by the National Institute of Standards and Technology (NIST) as "the process of verifying that a requested action or service is approved for a specific entity," authorization should not be confused with authentication. The former simply reveals whether users have access rights. The aforementioned principle of least privilege applies here, but a deny-by-default mentality must also be implemented. Simply put, this means that all traffic that's not explicitly permitted must be denied.</p>
+   <li>Authentication</li>
+   <p>Confirming that all individuals or entities are, in fact, who they claim to be, authentication processes verify identity and, ideally, will ensure that the most problematic parties are denied access. User IDs and passwords are the core components of modern authentication. OWASP also recommends Transport Layer Security (TLS) for login pages, as well as re-authentication to prevent session hijacking or cross-site request forgery.</p>
+
+</ul>
+		
+                <h3>•What is a <b>"fully digital enterprise" </b>?  </h3>
+                <p>A fully digital company is one that has no physical presence, operates exclusively online, and conducts all its business activities digitally. These companies rely heavily 
+                    on information technology and are vulnerable to various cyber threats such as malware, phishing attacks, denial of service (DoS) attacks, and data breaches. These attacks 
+                    can have serious consequences, including financial loss, reputational damage, and legal liability. 
+                 </p>
+                 <p>As information technology (IT) has reshaped the infrastructure and operations of enterprises, the digital enterprise evolved to represent businesses that have completed a digital transformation
+                     or digitalization to embed digital solutions across the enterprise.</p>
+              
+                   <center><img src="images/act5-pic2.jpg" alt=""></center> 
+                   <h3>•Reflections:</h3>	
+<p>The material is a helpful overview of the top 10 OWASP vulnerabilities, highlighting typical security problems and providing helpful advice for reducing them. Developers and website owners who wish to improve the security of their online applications and defend against potential assaults can use it as a starting point. </p>
+           
+<div>
+	References:
+    <em>
+    
+	<br>
+    <ul><li><a href="https://www.sitelock.com/blog/top-10-owasp-vulnerabilities/">Owasp top 10 vulnerabilities for 2023 By SiteLock</a></li>
+        <li><a href="https://www.techtarget.com/searchcio/definition/Digital-enterprise">Tech Target-Definition:Digital-enterprise</a></li>
+        <li> Spremic, M., & Simunic, D. (2018). Cybersecurity Challenges of Small and Medium-sized Enterprises in the Digital Economy. Interdisciplinary Description of Complex Systems, 16(4-A), 384-394.</li>
+        <li>Wei, H. L., Zhang, L., & Liang, X. (2019). A survey on security challenges of the digital economy. Future Generation Computer Systems, 92, 383-391.</li>
+    </ul>
+	</em>
+</div>    
+    </body>
+    </html>

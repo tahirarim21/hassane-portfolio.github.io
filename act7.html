@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzing the SolarWinds Exploit Using the Cyber Kill Chain</title>
+    <link rel="icon" href="images/hassan.png">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+            
+            p,h3,h5,img ,div,li{
+          
+          margin-top: 50px;
+          margin-bottom: 50px;
+          margin-right: 300px;
+          margin-left: 300px;
+        }
+        strong{ 
+            color: black;
+            font-size:28px;
+        }
+        b{
+            color: black;
+        }
+        div{
+            font-size: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        span:hover , span::after, span:active{
+            color: rgb(128, 0, 0);
+        
+        }
+        img{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ul><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></ul>
+    <h2>Introduction</h2>
+    <center><img src="images/act7-img1.jpg" alt=""></center>
+    <p>The SolarWinds exploit was a sophisticated cyberattack that targeted various organizations, compromising their digital infrastructure. To better understand and address this attack, we can leverage the Cyber Kill Chain framework, which breaks down the attack lifecycle into distinct phases. In this article, we will create a table analyzing the SolarWinds exploit using the Cyber Kill Chain, propose mitigations for each phase, identify any challenges in mitigation, and discuss the tools to be utilized at each stage.</p>
+
+    <h2>1. Analyzing the SolarWinds Exploit Using the Cyber Kill Chain</h2>
+
+    <table>
+        <tr>
+            <th>Phase</th>
+            <th>Description</th>
+            <th>Identified</th>
+        </tr>
+        <tr>
+            <td>Reconnaissance</td>
+            <td>Gathering information about the target organization.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Weaponization</td>
+            <td>Creating or obtaining the malicious payload.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Delivery</td>
+            <td>Delivering the payload to the target system.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Exploitation</td>
+            <td>Exploiting vulnerabilities to execute the payload.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Installation</td>
+            <td>Installing the malware on the compromised system.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Command and Control</td>
+            <td>Establishing communication channels for control.</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Actions on Objectives</td>
+            <td>Achieving the attacker's goals within the compromised system.</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+    <h2>2. Mitigations for Each Phase</h2>
+
+    <h3>Reconnaissance</h3>
+    <ul>
+        <li>Implement strict access controls and limit information exposure.</li>
+        <li>Monitor and analyze network traffic for unusual patterns.</li>
+    </ul>
+
+    <h3>Weaponization</h3>
+    <ul>
+        <li>Employ advanced threat detection systems to identify malicious payloads.</li>
+        <li>Regularly update and patch software to eliminate known vulnerabilities.</li>
+    </ul>
+
+    <h3>Delivery</h3>
+    <ul>
+        <li>Employ email filtering solutions to detect and block phishing attempts.</li>
+        <li>Utilize intrusion detection and prevention systems to monitor network traffic.</li>
+    </ul>
+
+    <h3>Exploitation</h3>
+    <ul>
+        <li>Regularly update and patch software to close vulnerabilities.</li>
+        <li>Utilize endpoint protection solutions to detect and block exploitation attempts.</li>
+    </ul>
+
+    <h3>Installation</h3>
+    <ul>
+        <li>Implement application control to restrict unauthorized software installation.</li>
+        <li>Utilize behavioral analysis tools to detect abnormal system changes.</li>
+    </ul>
+
+    <h3>Command and Control</h3>
+    <ul>
+        <li>Employ network monitoring tools to identify suspicious communication.</li>
+        <li>Implement robust firewalls to restrict unauthorized outbound connections.</li>
+    </ul>
+
+    <h3>Actions on Objectives</h3>
+    <ul>
+        <li>Conduct regular audits and penetration testing to identify and address vulnerabilities.</li>
+        <li>Implement a comprehensive incident response plan to minimize impact.</li>
+    </ul>
+
+    <h2>Challenges in Mitigation</h2>
+    <p>While mitigation strategies can significantly reduce the risk, it's important to note that achieving 100% security is challenging due to the evolving nature of cyber threats. Zero-day vulnerabilities and highly sophisticated attacks may pose challenges in mitigation.</p>
+
+    <h2>3. Tools for Each Phase</h2>
+
+    <h3>Reconnaissance</h3>
+    <ul>
+        <li>OSINT tools (e.g., Shodan, WHOIS).</li>
+        <li>Security Information and Event Management (SIEM) systems.</li>
+    </ul>
+
+    <h3>Weaponization</h3>
+    <ul>
+        <li>Antivirus and antimalware solutions.</li>
+        <li>Sandboxing tools for analyzing suspicious files.</li>
+    </ul>
+
+    <h3>Delivery</h3>
+    <ul>
+        <li>Email filtering solutions (e.g., Microsoft Defender for Office 365).</li>
+        <li>Intrusion Detection and Prevention Systems (IDPS).</li>
+    </ul>
+
+    <h3>Exploitation</h3>
+    <ul>
+        <li>Vulnerability scanning tools.</li>
+        <li>Endpoint protection solutions.</li>
+    </ul>
+
+    <h3>Installation</h3>
+    <ul>
+        <li>Application control tools.</li>
+        <li>Behavioral analysis tools (e.g., Carbon Black).</li>
+    </ul>
+
+    <h3>Command and Control</h3>
+    <ul>
+        <li>Network monitoring tools (e.g., Wireshark).</li>
+        <li>Next-generation firewalls.</li>
+    </ul>
+
+    <h3>Actions on Objectives</h3>
+    <ul>
+        <li>Penetration testing tools.</li>
+        <li>Incident response platforms.</li>
+    </ul>
+<div>
+	References:
+    <em>
+    
+	<br>
+    <ul>
+        <li><a href="https://www.virsec.com/resources/blog/analyzing-the-solarwinds-kill-chain"><b>the SolarWinds Kill Chain ---by Satya Gupta</b> </a></li>
+        
+    </ul>
+	</em>
+</div> 
+</body>
+
+</html>

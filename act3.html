@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DDOS Attack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/hassan.png">
+		<style>
+				
+				p,h3,h5,img ,div,li{
+			  
+			  margin-top: 50px;
+			  margin-bottom: 50px;
+			  margin-right: 300px;
+			  margin-left: 300px;
+			}
+			strong{ 
+				color: black;
+				font-size:28px;
+			}
+			b{
+				color: black;
+			}
+			div{
+				font-size: 20px;
+			}
+			h2{
+				text-align: center;
+			}
+			span:hover , span::after, span:active{
+				color: rgb(128, 0, 0);
+			
+			}
+			img{
+				text-align: center;
+			}
+			
+        </style>
+	</head>
+    <body>
+		<ul><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></ul>
+		
+			<br><br><h2>How to perform SYN flooding Attack with Metasploit ? </h2>
+			<p>Firstly we need to know what is <b>  SYN flooding </b> is a type of <b>Distributed Denial-of-Service (DDoS)</b> attack that
+                exploits part of the normal <b>TCP three-way handshake</b> to consume
+                resources on the targeted server and render it unresponsive. </p>
+                <center><img src="images/syn-flood.png" alt=""></center>
+                <p>In an SYN flood attack, the attacker sends a large no of SYN packets to all available ports on the
+                    victim server, often using a fake IP address. The server, unaware of the attack,receives multiple
+                    legitimate requests to establish communication. It responds to each attempt with an SYN-ACK packet
+                     from all open ports.</p>
+                     <p>In networking, when a server leaves a connection open but the machine on the other side of the connection does not, the connection is considered 
+                        half-open. In this type of DDoS attack, the targeted server continuously leaves connections open and waits for each connection to time out before 
+                        the ports become available again. The result is that this type of attack can be considered a "half-open attack".</p>
+
+				
+			<h3>How to perform SYS Flood with Metasploit ?</h3>
+           
+			<p>First, select your target's IP address. I am
+                taking <b>emu.edu.tr</b> as a victim. So you know how to get
+                an IP address from a domain name. Simple doping and that will give
+                to domain IP address. </p>
+                <center><img src="images/act3-pic1.jpeg" alt=""></center><br>
+                <p>So now I know the victim's IP Address <b>193.140.173.247</b>.<br>
+                    Launching Metasploit by typing <b>msfconsole</b>  in your kali terminal. </p>
+                    <center><img src="images/act3-pic2.jpeg" alt=""></center>
+                    <p>Then use the select the auxiliary  <b>"auxiliary/dos/TCP/synflood"</b> by
+                        typing the following command. <br>
+                        <b>Msf6 > use auxiliary/dos/tcp/synflood</b> <br>
+                        <b>Msf6> show options</b>
+                    </p>
+                   <center><img src="images/act3-pic3.jpeg" alt=""></center> 
+                    <p>Now you can see you have all the available options that you can set.
+                        To set an option just you have to typeset and the option name and
+                        option. <br>
+                        You have to set two main option <br>
+                     <b> RHOST=</b> target IP Address <br>
+                       <b>RPORT=</b> target PORT Address <br>
+                       <b>Set RPORT 18.192.182.30</b> <br>
+                        <b>Set RPORT 80</b> 
+                    </p>
+                   <center><img src="images/act3-pic4.jpeg" alt=""></center> 
+                    <p>To launch the attack just type: <b>exploit</b>  to see the packets you can open Wireshark.</p>
+                    
+        <h3>•Reflections:</h3><p>A prevalent type of DDoS (Distributed Denial of Service) attack, SYN flood DDoS assaults are thoroughly explained in the article. It starts out by presenting the idea of DDoS assaults and how they affect internet services, highlighting how disruptive they can be.
+
+			The discussion then moves on to the intricacies of SYN flood assaults, describing how attackers use the TCP three-way handshake process's weaknesses to overwhelm their targets' servers. The first SYN request, the server's SYN-ACK response, and the last ACK from the client are all covered in this section, along with the various stages of a SYN flood assault. The paper also emphasizes how SYN flood assaults are amplified by the use of botnets and fake IP addresses.</p>
+
+<div>
+	References:
+	<ul>
+		<li><a href="https://www.cloudflare.com/fr-fr/learning/ddos/syn-flood-ddos-attack">CloudFlare Article:Syn Flood DDOS Attack</a></li>
+		<li><a href="https://www.linkedin.com/pulse/how-perform-syn-flooding-attack-metasploit-">Linkedin Article: How Perform Syn Flooding Attack Metasploit</a></li>
+	</ul>
+	<em> <br>
+        
+	</em>
+
+
+</div>
+        
+    </body>
+    </html>
